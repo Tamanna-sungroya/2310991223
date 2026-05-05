@@ -1,2 +1,4 @@
 .env
-./node-modules
+.env.local
+node_modules/
+venv/
