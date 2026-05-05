@@ -1,0 +1,42 @@
+/* notification_app/frontend/src/index.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+}
+
+.container {
+  max-width: 400px;
+  margin: 60px auto;
+  background: #fff;
+  padding: 2rem 2.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background 0.2s;
+}
+button:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}
+button:hover:not(:disabled) {
+  background: #0056b3;
+}
+.response {
+  margin-top: 1.5rem;
+  background: #f1f1f1;
+  padding: 1rem;
+  border-radius: 4px;
+  text-align: left;
+}
