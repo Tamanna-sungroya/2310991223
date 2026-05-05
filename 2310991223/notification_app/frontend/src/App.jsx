@@ -1,12 +1,9 @@
-// notification_app/frontend/src/App.jsx
 import React, { useState } from 'react';
 import { Log } from '../../../logging_middleware/logger.js';
 import './App.css';
-
 export default function App() {
   const [response, setResponse] = useState(null);
   const [loading, setLoading] = useState(false);
-
   const sendNotification = async () => {
     await Log('frontend', 'info', 'component', 'Button clicked');
     setLoading(true);
@@ -26,7 +23,6 @@ export default function App() {
       setLoading(false);
     }
   };
-
   return (
     <div className="container">
       <h1>Notification App</h1>

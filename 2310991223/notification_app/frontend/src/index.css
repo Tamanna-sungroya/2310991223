@@ -1,10 +1,8 @@
-/* notification_app/frontend/src/index.css */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: #f7f7f7;
 }
-
 .container {
   max-width: 400px;
   margin: 60px auto;
@@ -14,7 +12,6 @@ body {
   box-shadow: 0 2px 12px rgba(0,0,0,0.08);
   text-align: center;
 }
-
 button {
   background: #007bff;
   color: #fff;

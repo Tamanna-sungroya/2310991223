@@ -1,7 +1,5 @@
-// notification_app/backend/controllers/notificationController.js
 import { createNotificationService } from '../services/notificationService.js';
 import { Log } from '../../../logging_middleware/logger.js';
-
 export async function createNotification(req, res, next) {
   try {
     await Log('backend', 'info', 'controller', 'Received notification request');

@@ -1,14 +1,14 @@
-// notification_app/backend/server.js
+dotenv.config();
 import express from 'express';
 import dotenv from 'dotenv';
 import cors from 'cors';
 import { requestLogger, errorLogger, logServerStart } from '../../logging_middleware/middleware.js';
 import notificationRoutes from './routes/notificationRoutes.js';
 
-// Load env variables
 dotenv.config();
 
 const app = express();
+
 const PORT = process.env.PORT || 4000;
 
 app.use(cors());
@@ -21,8 +21,8 @@ app.get('/', (req, res) => {
 
 app.use('/notify', notificationRoutes);
 
-// Global error handler
 app.use(errorLogger);
+
 app.use((err, req, res, next) => {
   res.status(500).json({ error: err.message || 'Internal Server Error' });
 });
